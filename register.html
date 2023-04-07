@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iofrm</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
+
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+body{
+    margin-top: 120px;
+    background-color: #23394A;
+    color: rgb(208, 200, 200);
+}
+h3{
+    margin-bottom: 70px;
+}
+a{
+    color: rgb(208, 200, 200);
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+   
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(208, 200, 200);
+}
+input{
+    margin-top: 30px;
+    background-color: #445867;
+    color: #DEDBDB;
+}
+input:hover{
+    opacity:0.7 ;
+}   
+#sub{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#submit{
+    height: 30px;
+    padding: 2px;
+    width: 100px;
+    margin-right: 40px;
+    background-color:rgb(208, 200, 200);
+    border: rgb(208, 200, 200);
+    color: #23394A;
+}
+
+#other{
+    margin-right: 80px;
+}
+#image{
+    margin-right: 50px;
+}
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="form-body " style="display: flex;">
+            <div class="website-logo">
+                <a href="index.html">
+                    <div class="logo">
+                        <img id="image" class="logo-size" src="university.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="img-holder">
+                    <div class="bg"></div>
+                    <div class="info-holder">
+
+                    </div>
+                </div>
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Welcome to our university</h3>
+                            <div class="page-links">
+                                <a href="basic.html" class="active">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                            <form>
+                                <input class="form-control" type="text" name="username" placeholder="Full Name"
+                                required="">
+                                <input class="form-control" type="text" name="address" placeholder="E-mail Address"
+                                    required="">
+                                <input class="form-control" type="password" name="password" placeholder="Password"
+                                    required="">
+                              
+                                <div class="form-button" id="sub">
+                                    <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                                   
+                                </div>
+                            </form>
+                            <div class="other-links" id="other-links">
+                                <span id="other">Or login with</span>
+                                <a href="https://www.facebook.com/">Facebook</a>
+                                <a href="https://www.google.com/">Google</a>
+                                <a href="https://www.linkedin.com/">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</body>
+
+</html>
