@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: #23394A;
+            color: rgb(208, 200, 200);
+            margin-left: 20px;
+        }
+
+        a {
+
+            text-decoration: none;
+            color: #23394A;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #23394A;
+
+        }
+
+        #course {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Course Details Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="margin-bottom: 30px;">Course Details</h2>
+                <p><strong>Course Title : </strong> Introduction to Web Development</p>
+                <p><strong>Description : </strong> This course will introduce you to the basics of web development,
+                    including HTML, CSS, and JavaScript.</p>
+                <p><strong>Prerequisites : </strong> None</p>
+                <p><strong>Schedule : </strong> Monday and Wednesday from 9:00am - 11:00am</p>
+                <p><strong>Available Spots : </strong> 10</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add Course Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="margin-bottom: 30px; margin-top: 60px;">Add Course</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="course" style="font-size: 20px;">Select a course : </label>
+                        <select class="form-control" id="course">
+                            <option>Introduction to Web Development</option>
+                            <option>Arabic</option>
+                            <option>Database Management</option>
+                            <option>Network</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 30px; font-size: 15px;">
+                        <a href="Schedule.html">Add Course</a> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

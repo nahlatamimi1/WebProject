@@ -15,57 +15,75 @@
 
 
 
-    <style>
-      body {
-        background-color:  #23394A;
-      }
-      #login{
-          background-color: rgb(208, 200, 200);
-          border: rgb(208, 200, 200);
-      }
-      label{
-          font-size: 20px;
-          
-      }
-      #button1, #button2 , #button3{
-        width: 100px;
-        background-color:rgb(208, 200, 200) ;
-        border: rgb(208, 200, 200);
-        color: #23394A;
-        margin-top: 10px;
-      }
-      #button3{
-        margin-bottom: 80px;
-      }
-      
+  <style>
+    body {
+      background-color: #23394A;
+    }
+
+    #login {
+      background-color: rgb(208, 200, 200);
+      border: rgb(208, 200, 200);
+    }
+
+    label {
+      font-size: 20px;
+
+    }
+
+    #button1,
+    #button2,
+    #button3 {
+      width: 100px;
+      background-color: rgb(208, 200, 200);
+      border: rgb(208, 200, 200);
+      color: #23394A;
+      margin-top: 10px;
+    }
+
+    #button3 {
+      margin-bottom: 80px;
+    }
+
+    a {
+      color:#23394A;
+      text-decoration: none;
+
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color:#23394A;
+    }
   </style>
 
 </head>
 
 <body>
   <div class="container " style="width: 400px; margin-top:120px;">
-      <h1 class="text-center" style="color: rgb(208, 200, 200);">Course Search</h1>
-      <form action="/login" method="post">
-          <div class="mb-3" style="margin-top: 80px;">
-              <label for="stuid" class="form-label" style="color: rgb(208, 200, 200);">Course Code:</label>
-              <input type="text" class="form-control" id="stuid" name="stuid" placeholder="Course Code" >
-              <button id="button1" type="submit" class="btn btn-primary text-center">Search</button>  
-            </div>
-          <div class="mb-3">
-              <label for="cname" class="form-label" style="color: rgb(208, 200, 200);">Course Name:</label>
-              <input type="text" class="form-control" id="cname" name="cname" placeholder="Course Name">
-              <button id="button2" type="submit" class="btn btn-primary text-center">Search</button>  
+    <h1 class="text-center" style="color: rgb(208, 200, 200);">Course Search</h1>
+    <form action="/login" method="post">
+      <div class="mb-3" style="margin-top: 80px;">
+        <label for="stuid" class="form-label" style="color: rgb(208, 200, 200);">Course Code:</label>
+        <input type="text" class="form-control" id="stuid" name="stuid" placeholder="Course Code">
+        <button id="button1" type="submit" class="btn btn-primary text-center">
+          <a href="details.html">Search</a>
+        </button>
+      </div>
+      <div class="mb-3">
+        <label for="cname" class="form-label" style="color: rgb(208, 200, 200);">Course Name:</label>
+        <input type="text" class="form-control" id="cname" name="cname" placeholder="Course Name">
+        <button id="button2" type="submit" class="btn btn-primary text-center"> <a href="details.html">Search</a></button>
 
-            </div>
-          <div class="mb-3">
-            <label for="insname" class="form-label" style="color: rgb(208, 200, 200)">Instructor Name:</label>
-            <input type="text" class="form-control" id="insname" name="insname" placeholder="Instructor Name">
-            <button id="button3" type="submit" class="btn btn-primary text-center">Search</button>  
+      </div>
+      <div class="mb-3">
+        <label for="insname" class="form-label" style="color: rgb(208, 200, 200)">Instructor Name:</label>
+        <input type="text" class="form-control" id="insname" name="insname" placeholder="Instructor Name">
+        <button id="button3" type="submit" class="btn btn-primary text-center"> <a href="details.html">Search</a></button>
 
-          </div>
-          </form>
+      </div>
+    </form>
 
-    
+
   </div>
 </body>
 
@@ -82,36 +100,3 @@
 
 
 
-
-
-
-  <!-- <style>
-            body{
-                width: 300px;
-                
-            }
-        </style>
-</head>
-<body>
-    <div class="container py-5 ">
-        <h2 class="text-center mb-4">Course Search</h2>
-        <form action="/search" method="post">
-          <div class="row mb-3">
-            <div class="mb-3">
-              <label for="courseCode" class="form-label">Course Code:</label>
-              <input type="text" class="form-control" id="courseCode" name="courseCode">
-            </div>
-            <div class="mb-3">
-              <label for="courseName" class="form-label">Course Name:</label>
-              <input type="text" class="form-control" id="courseName" name="courseName">
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="instructorName" class="form-label">Instructor Name:</label>
-            <input type="text" class="form-control" id="instructorName" name="instructorName">
-          </div>
-          <button type="submit" class="btn btn-primary">Search</button>
-        </form>
-      </div>
-</body>
-</html> -->
