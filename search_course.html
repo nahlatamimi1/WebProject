@@ -18,6 +18,9 @@
   <style>
     body {
       background-color: #23394A;
+      margin-top: 60px;
+      margin-left: 30px;
+      width: 300px;
     }
 
     #login {
@@ -44,59 +47,58 @@
       margin-bottom: 80px;
     }
 
+    label {
+      color: rgb(208, 200, 200);
+    }
+
     a {
-      color:#23394A;
+      color: #DEDBDB;
       text-decoration: none;
 
     }
 
     a:hover {
       text-decoration: underline;
-      color:#23394A;
+      color: #DEDBDB;
+    }
+
+    #search {
+      margin-top: 30px;
+      background-color: #445867;
+      color: #DEDBDB;
+      border: #445867;
+      width: 100px;
     }
   </style>
 
 </head>
 
 <body>
-  <div class="container " style="width: 400px; margin-top:120px;">
-    <h1 class="text-center" style="color: rgb(208, 200, 200);">Course Search</h1>
-    <form action="/login" method="post">
-      <div class="mb-3" style="margin-top: 80px;">
-        <label for="stuid" class="form-label" style="color: rgb(208, 200, 200);">Course Code:</label>
-        <input type="text" class="form-control" id="stuid" name="stuid" placeholder="Course Code">
-        <button id="button1" type="submit" class="btn btn-primary text-center">
-          <a href="details.html">Search</a>
-        </button>
-      </div>
-      <div class="mb-3">
-        <label for="cname" class="form-label" style="color: rgb(208, 200, 200);">Course Name:</label>
-        <input type="text" class="form-control" id="cname" name="cname" placeholder="Course Name">
-        <button id="button2" type="submit" class="btn btn-primary text-center"> <a href="details.html">Search</a></button>
+  <div class="container">
+    <h1 style="color:  rgb(208, 200, 200);">Search Courses</h1>
+    <form>
+      <form>
 
-      </div>
-      <div class="mb-3">
-        <label for="insname" class="form-label" style="color: rgb(208, 200, 200)">Instructor Name:</label>
-        <input type="text" class="form-control" id="insname" name="insname" placeholder="Instructor Name">
-        <button id="button3" type="submit" class="btn btn-primary text-center"> <a href="details.html">Search</a></button>
+        <div class="form-group" style="margin-top: 40px;">
+          <label for="search-type">Search by <small>(select)</small> :</label>
+          <select class="form-control" id="search-type" name="search-type">
+            <option value="course-code">Course Code</option>
+            <option value="course-name">Course Name</option>
+            <option value="instructor-name">Instructor Name</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-top: 20px;">
+          <label for="search-term">Search for :</label>
+          <input type="text" class="form-control" id="search-term" name="search-term">
+        </div>
+        <button id="search" type="submit" class="btn btn-primary"><a href="details.html">Search</a> </button>
+      </form>
 
-      </div>
     </form>
-
-
   </div>
+
+
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

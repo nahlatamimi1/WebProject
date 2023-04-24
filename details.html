@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <style>
         body {
             margin-top: 50px;
@@ -17,58 +23,84 @@
         a {
 
             text-decoration: none;
-            color: #23394A;
-
+            color: #DEDBDB;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #23394A;
+            color: #DEDBDB;
 
         }
 
         #course {
             font-size: 15px;
         }
+
+        #infor {
+            color: rgb(208, 200, 200);
+        }
+
+        #addto {
+            margin-top: 30px;
+            background-color: #445867;
+            color: #DEDBDB;
+            border: #445867;
+
+        }
     </style>
 </head>
 
 <body>
-    <!-- Course Details Section -->
-    <div class="container">
+    <div class="container" style="margin-bottom: 40px;">
         <div class="row">
             <div class="col-md-12">
-                <h2 style="margin-bottom: 30px;">Course Details</h2>
-                <p><strong>Course Title : </strong> Introduction to Web Development</p>
-                <p><strong>Description : </strong> This course will introduce you to the basics of web development,
-                    including HTML, CSS, and JavaScript.</p>
-                <p><strong>Prerequisites : </strong> None</p>
-                <p><strong>Schedule : </strong> Monday and Wednesday from 9:00am - 11:00am</p>
-                <p><strong>Available Spots : </strong> 10</p>
+                <table class="table">
+                    <thead>
+                        <tr id="infor">
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Instructor Name</th>
+                            <th>Available Spots</th>
+
+                        </tr>
+                    </thead>
+                    <tbody style="color: rgb(208, 200, 200) ;">
+                        <!-- rows for displaying search results -->
+                        <!-- example -->
+                        <td>4005</td>
+                        <td>Database</td>
+                        <td>Mohammad </td>
+                        <td>9:00-10:00 Monday , Wednesday</td>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-    <!-- Add Course Section -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 style="margin-bottom: 30px; margin-top: 60px;">Add Course</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="course" style="font-size: 20px;">Select a course : </label>
-                        <select class="form-control" id="course">
-                            <option>Introduction to Web Development</option>
-                            <option>Arabic</option>
-                            <option>Database Management</option>
-                            <option>Network</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="margin-top: 30px; font-size: 15px;">
-                        <a href="Schedule.html">Add Course</a> </button>
-                </form>
-            </div>
-        </div>
+        <h2 style="margin-top: 60px; margin-bottom: 30px;">Course Details</h2>
+        <dl>
+            <dt>Course Code:</dt>
+            <dd><!-- display course code here --></dd>
+            <dt>Course Name:</dt>
+            <dd><!-- display course name here --></dd>
+            <dt>Instructor Name:</dt>
+            <dd><!-- display instructor name here --></dd>
+            <dt>Description:</dt>
+            <dd><!-- display course description here --></dd>
+            <dt>Prerequisites:</dt>
+            <dd><!-- display course prerequisites here --></dd>
+            <dt>Schedule:</dt>
+            <dd><!-- display course schedule here --></dd>
+            <dt>Available Spots:</dt>
+            <dd><!-- display available spots here --></dd>
+        </dl>
+        <form>
+            <button type="submit" class="btn btn-primary" id="addto"><a href="Schedule.html"> Add to
+                    Schedule</a></button>
+        </form>
     </div>
+
 </body>
 
 </html>
